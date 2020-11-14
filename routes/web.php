@@ -13,6 +13,13 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+use App\Task;
+
 Route::get('/', function () {
     return view('welcome');
+});
+
+Route::get('/tasks', function () {
+    $tasks = Task::pluck('body');
+    return view('tasks.index', compact('tasks'));
 });
