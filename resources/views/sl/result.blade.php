@@ -10,7 +10,7 @@
 
 <body>
     <h1>The Result:</h1>
-    <p>Terbesar kedua adalah {{ $secondlargest }} yang masuk pada urutan {{ $idsec }}</p>
+    <p>The second largest is {{ $secondlargest }} at position {{ $idsec }}</p>
 </body>
 
 </html>
