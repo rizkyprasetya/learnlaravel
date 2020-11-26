@@ -15,7 +15,7 @@ class slcal extends Controller
     public function __invoke(Request $request)
     {
         $items = $request->input('data.*');
-        print_r($items);
+        // print_r($items);
 
         for ($i = 0; $i < count($items); $i++) {
 
