@@ -14,11 +14,8 @@ class slcal extends Controller
      */
     public function __invoke(Request $request)
     {
-        $secondlargest = 0;
-        $largest = 0;
-        $idbig = 0;
-
         $items = $request->input('data.*');
+        print_r($items);
 
         for ($i = 0; $i < count($items); $i++) {
 
@@ -34,7 +31,7 @@ class slcal extends Controller
                     $largest = $value;
                     $idsec = $idbig;
                     $idbig = $i;
-                } else {
+                } else if ($i == 1 or $value > $secondlargest) {
                     $secondlargest = $value;
                     $idsec = $i;
                 }
