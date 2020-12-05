@@ -1,4 +1,4 @@
-@startuml
+@startuml "Restaurant"
 left to right direction
 Actor Guest as g
 package Professional {
