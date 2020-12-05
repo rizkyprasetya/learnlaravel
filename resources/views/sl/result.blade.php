@@ -13,7 +13,7 @@
 </head>
 
 <body>
-    <h1>The Result:</h1>
+    <h2>The Result:</h2>
     <p>The second largest is {{ $secondlargest }} at position {{ $idsec }}</p>
 </body>
 
